@@ -2,7 +2,7 @@
  * @Author: anqiao 1102877041@qq.com
  * @Date: 2023-03-02 14:51:38
  * @LastEditors: anqiao 1102877041@qq.com
- * @LastEditTime: 2023-03-22 16:55:44
+ * @LastEditTime: 2023-03-23 17:20:26
  * @description:
  * @FilePath: /vue3-oms/src/router/index.ts
  */
@@ -20,7 +20,7 @@ import {
   RouteRecordRaw,
   createWebHistory
 } from 'vue-router'
-import Login from '../pages/login/login.vue'
+import Login from '../pages/Login/login.vue'
 import Home from '../components/layout.vue'
 import NotFoundComponent from '../components/404.vue'
 import sellPlanOneself from '../pages/orderManagement/sellPlanOneself.vue'
