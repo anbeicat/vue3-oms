@@ -2,20 +2,20 @@
  * @Author: anqiao 1102877041@qq.com
  * @Date: 2023-03-18 15:01:46
  * @LastEditors: anqiao 1102877041@qq.com
- * @LastEditTime: 2023-03-22 17:26:14
+ * @LastEditTime: 2023-03-23 16:52:28
  * @description:
  * @FilePath: /vue3-oms/src/components/Grid.vue
 -->
 <script setup lang="ts">
 import { ref, reactive, onMounted, defineEmits, onBeforeMount } from 'vue'
 interface Employee {
-  type?: 'select' | 'input' | 'cascader' | 'rangePicker',
+  type?: 'select' | 'input' | 'cascader' | 'rangePicker'| string,
   label: string,
   field: string,
   params?: any,
 }
 let props = defineProps<{
-  searchData: Array<Employee>,
+  searchData: Employee[],
   onSearch?: Function,
   tblProps: {
     tableColumns: any[],

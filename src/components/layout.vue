@@ -2,7 +2,7 @@
  * @Author: anqiao 1102877041@qq.com
  * @Date: 2023-03-03 14:02:44
  * @LastEditors: anqiao 1102877041@qq.com
- * @LastEditTime: 2023-03-20 14:34:54
+ * @LastEditTime: 2023-03-23 17:01:14
  * @description:
  * @FilePath: /vue3-oms/src/components/layout.vue
 -->
@@ -20,8 +20,8 @@ const collapsed = ref(false)
 const selectedKeys = ref()
 const openKeys = ref()
 onBeforeMount(() => {
-  routes = JSON.parse(useLocalStorage('routes', null).value)
-  buttons = JSON.parse(useLocalStorage('buttons', null).value)
+  routes = JSON.parse(localStorage['routes'])
+  buttons = JSON.parse(localStorage['buttons'])
   selectedKeys.value = [defaultStore.state?.path]
 })
 const onCollapse = (val: boolean) => {

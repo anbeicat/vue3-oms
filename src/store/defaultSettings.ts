@@ -2,13 +2,12 @@
  * @Author: anqiao 1102877041@qq.com
  * @Date: 2023-03-07 09:54:35
  * @LastEditors: anqiao 1102877041@qq.com
- * @LastEditTime: 2023-03-20 11:25:33
+ * @LastEditTime: 2023-03-23 17:08:16
  * @description:
  * @FilePath: /vue3-oms/src/store/defaultSettings.ts
  */
 import { defineStore } from 'pinia'
 import { useLocalStorage, useSessionStorage } from '@vueuse/core'
-import { AnyAaaaRecord } from 'dns'
 export const useDefaultStore = defineStore('main', {
   state: () => ({
     clientId: 'omsSeller', // 客户端id
@@ -36,7 +35,7 @@ export const useDefaultStore = defineStore('main', {
     routes: [],
     buttons: [],
     loading: false,
-    state: {},
+    state: null,
     breadcrumb:[],
     theme:true
   }),
